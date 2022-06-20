@@ -1,0 +1,58 @@
+print(520)
+print(chr(0b100111001011000))
+print(ord('乘'))
+#保留字（keyword）
+import keyword
+print(keyword.kwlist)
+
+name='maliya'
+print(name) #maliya
+print(name,id(name),type(name)) #id可以类比为c语言的地址
+
+#变量的多次赋值
+name='aaa'
+print(name)
+name='bbb'
+print(name)
+#二进制 0b
+#八进制 0o
+#十六进制 0x
+
+#int
+n1=1
+n2=90
+n3=1000
+print(n1,type(n1))
+print(n1,type(n2))
+print(n3,type(n3))
+
+#float (由于二进制的底层和浮点数的存储逻辑，有时计算不准确）
+n1=1.1
+n2=2.2
+print(n1+n2) #3.3000000000000003
+#如果需要得到准确结果
+from decimal import Decimal
+print(Decimal('1.1')+Decimal('2.2')) #3.3
+
+#bool (boolean)
+
+f1=True#1
+f2=False#0
+print(type(f1),type(f2))
+print(f1+1,f2+1)
+
+#数据类型转换
+name='aaa'
+age=20
+print(type(name),type(age))
+#print('my name'+name+'i am'+age+'years old') #err
+print('my name is '+name+',i am '+str(age)+' years old') #err
+
+#input 函数
+#从键盘录入两个整数并计算和
+#n1=int(input('请输入一个整数'))
+#n2=int(input('请输入一个整数'))
+#print(int(n1)+int(n2))
+
+#运算符
+#
